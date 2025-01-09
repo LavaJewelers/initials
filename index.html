@@ -31,6 +31,21 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5); /* Reduces opacity for clarity */
+            z-index: 0;
+        }
+        .hero h1, .hero p, .cta-button {
+            position: relative;
+            z-index: 1;
         }
         .hero h1 {
             font-size: 2.5em;
@@ -139,8 +154,8 @@
             <select id="material" name="material" required>
                 <option value="">Select an option</option>
                 <option value="plain gold">Plain 18k Gold</option>
-                <option value="gold zirconia">Gold with Zirconia</option>
-                <option value="gold diamonds">Gold with Diamonds</option>
+                <option value="gold zircon">18k Gold with Zircon</option>
+                <option value="gold diamonds">18k Gold with Diamonds</option>
             </select>
 
             <button type="submit">Submit Your Request</button>
