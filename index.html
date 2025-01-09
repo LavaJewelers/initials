@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Campaign - Lava Jewelers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f0f0f0, #dcdcdc);
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .campaign-banner {
+            text-align: center;
+            padding: 50px;
+            background-color: #444;
+            color: white;
+        }
+        .campaign-banner h2 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .campaign-banner p {
+            margin: 10px 0 30px;
+            font-size: 1.2em;
+        }
+        .cta-button {
+            background-color: #e63946;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .cta-button:hover {
+            background-color: #c91f33;
+        }
+        .form-section {
+            padding: 30px;
+            background-color: white;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .form-section h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-section form label {
+            margin-bottom: 5px;
+        }
+        .form-section form input, .form-section form button {
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-section form button {
+            background-color: #e63946;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-section form button:hover {
+            background-color: #c91f33;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9em;
+        }
+        .valentines-theme {
+            color: #e63946;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lava Jewelers</h1>
+    </header>
+
+    <section class="campaign-banner">
+        <h2 class="valentines-theme">Celebrate Love this Valentine’s Day</h2>
+        <p>Discover our exclusive collection of personalized Arabic letter rings and necklaces crafted in 18k gold and diamonds. A perfect gift for your loved one.</p>
+        <a href="#form" class="cta-button">Reserve Your Gift Now</a>
+    </section>
+
+    <section id="form" class="form-section">
+        <h3>Reserve Your Personalized Jewelry</h3>
+        <form action="#" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="initials">Preferred Initial(s):</label>
+            <input type="text" id="initials" name="initials" placeholder="Enter initials (e.g., A, AB)" required>
+
+            <label for="email">Email Address (Optional):</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email (optional)">
+
+            <button type="submit">Submit Your Request</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us via Instagram DM or call us at [Your Phone Number]. Follow us for more updates!</p>
+    </footer>
+</body>
+</html>
