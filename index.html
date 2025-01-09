@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lava Jewelers - Valentine's Collection</title>
+    <title>Lava Jewelers - Collection</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -125,14 +125,14 @@
 
     <section class="hero">
         <h1>Your Initials, Your Statement</h1>
-        <p>Discover our exclusive Valentine's Collection featuring personalized Arabic initial rings and necklaces crafted with 18k gold and diamonds.</p>
-        <a href="#form" class="cta-button">Reserve Your Masterpiece</a>
+        <p>Discover our exclusive collection featuring personalized Arabic initial rings and necklaces crafted with 18k gold and diamonds.</p>
+        <a href="#form" class="cta-button">Craft Your Masterpiece</a>
     </section>
 
     <section id="form" class="form-section">
-        <h3>Reserve Your Personalized Jewelry</h3>
-        <form action="#" method="POST">
-            <label for="dob">Date of Birth (Required):</label>
+        <h3>Craft Your Personalized Jewelry</h3>
+        <form action="thankyou.html" method="POST">
+            <label for="dob">Date of Birth:</label>
             <input type="date" id="dob" name="dob" required>
 
             <label for="first-name">First Name:</label>
@@ -144,14 +144,14 @@
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 
-            <label for="email">Email Address (Optional):</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email address">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
 
             <label for="initial1">First Initial:</label>
             <input type="text" id="initial1" name="initial1" placeholder="Enter first letter" maxlength="1" required>
 
             <label for="initial2">Second Initial:</label>
-            <input type="text" id="initial2" name="initial2" placeholder="Enter second letter" maxlength="1">
+            <input type="text" id="initial2" name="initial2" placeholder="Enter second letter" maxlength="1" required>
 
             <label for="material">Material Preference:</label>
             <select id="material" name="material" required>
@@ -166,7 +166,7 @@
     </section>
 
     <footer>
-        <p>Contact us via Instagram DM or call us at [Your Phone Number].</p>
+        <p>Contact us via Instagram DM.</p>
         <p>&copy; 2025 Lava Jewelers. All rights reserved.</p>
     </footer>
 </body>
