@@ -24,7 +24,7 @@
             text-align: center;
             padding: 50px 20px;
             background: url('jewelry_image_resized.jpeg') no-repeat center center;
-            background-size: cover;
+            background-size: contain;
             color: black;
         }
         .hero h1 {
@@ -69,7 +69,7 @@
             margin-bottom: 5px;
             color: #555;
         }
-        .form-section form input {
+        .form-section form input, .form-section form select {
             padding: 10px;
             margin-bottom: 15px;
             font-size: 1em;
@@ -118,8 +118,25 @@
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 
-            <label for="initials">Preferred Initial(s):</label>
-            <input type="text" id="initials" name="initials" placeholder="Enter initials (e.g., A, AB)" required>
+            <label for="email">Email Address (Optional):</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+
+            <label for="dob">Date of Birth (Optional):</label>
+            <input type="date" id="dob" name="dob">
+
+            <label for="initial1">First Initial:</label>
+            <input type="text" id="initial1" name="initial1" placeholder="Enter first letter" maxlength="1" required>
+
+            <label for="initial2">Second Initial:</label>
+            <input type="text" id="initial2" name="initial2" placeholder="Enter second letter" maxlength="1">
+
+            <label for="material">Material Preference:</label>
+            <select id="material" name="material" required>
+                <option value="">Select an option</option>
+                <option value="plain gold">Plain 18k Gold</option>
+                <option value="gold zirconia">Gold with Zirconia</option>
+                <option value="gold diamonds">Gold with Diamonds</option>
+            </select>
 
             <button type="submit">Submit Your Request</button>
         </form>
